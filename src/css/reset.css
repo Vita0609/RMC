@@ -1,4 +1,16 @@
 /* Reset styles */
+body {
+  background: rgba(36, 38, 45);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: #434455;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -7,10 +19,6 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
 }
 
 ul {
@@ -32,4 +40,32 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .section {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .section {
+    padding-top: 140px;
+  }
 }

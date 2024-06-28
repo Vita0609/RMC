@@ -5,8 +5,15 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./services.css');
+@import url('./about.css');
+@import url('./projects.css');
+@import url('./experience.css');
+@import url('./avaibility.css');
+@import url('./team.css');
+@import url('./footer.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +29,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Larken-Medium', sans-serif;
+  --third-family: 'Larken-Regular', sans-serif;
 }
