@@ -1,0 +1,124 @@
+.experience {
+    padding: 30px 0;
+    background-color: #23262f;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-wrap {
+    max-width: 600px;
+}
+
+.experience-title {
+    font-family: 'Larken-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.experience-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.experience-item-title {
+    font-family: 'Larken-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.59091;
+    color: #ffc978;
+}
+
+.experience-item-title span {
+    font-size: 32px;
+}
+
+.experience-item-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #dfe9eb;
+}
+
+.experience-btn {
+    border: 1px solid #fff;
+    width: 210px;
+    height: 59px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: transparent;
+    margin-top: 30px;
+}
+
+.experience-btn:active {
+    color: #eebc70;
+    border-color: #eebc70;
+    transform: scale(1.02);
+    font-size: 14.5;
+}
+
+.experience-img {
+    width: 100%;
+}
+
+@media screen and (max-width: 435px) {
+    .experience-item-title {
+        font-size: 40px;
+    }
+
+    .experience-item-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .experience-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .experience-item-title {
+        font-size: 46px;
+    }
+
+    .experience-btn {
+        transition: all 0.5s ease;
+    }
+
+    .experience-btn:focus,
+    .experience-btn:hover {
+        color: #ffc978;
+        border-color: #ffc978;
+        transform: scale(1.02);
+        font-size: 14.5;
+    }
+
+    .experience-img {
+        max-width: 560px;
+        min-width: 300px;
+    }
+
+    .experience-wrap {
+        min-width: 350px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .experience-item-title {
+        font-size: 64px;
+    }
+
+    .experience-title {
+        font-size: 60px;
+    }
+}

@@ -1,0 +1,149 @@
+.avaibility-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.avaibility-table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    width: 800px;
+}
+
+.avaibility-table td {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+.avaibility-table td:not(:last-child) {
+    padding-right: 60px;
+}
+
+.avaibility-tabl-title {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #ffb076;
+}
+
+.avaibility-tabl-other {
+    color: #abaeb7;
+}
+
+.avaibility-residence {
+    color: #fff;
+}
+
+.avaibility-tabl-view {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tabl-current {
+    position: relative;
+}
+
+.tabl-current::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #abaeb7;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.avaibility-wrap-tabl {
+    overflow-x: auto;
+}
+
+.avaibility-wrap {}
+
+.avaibility-prg {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    color: #ffc978;
+}
+
+.avaibility-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 20px;
+    min-width: 290px;
+}
+
+.avaibility-wrap-one {
+    display: none;
+}
+
+.avaibility-img {
+    display: none;
+}
+
+.avaibility-tabl-view:focus,
+.avaibility-tabl-view:hover {
+    color: #ffb077;
+}
+
+.avaibility-tabl-view:active {
+    color: #e8a06d;
+}
+
+@media screen and (min-width: 768px) {
+    .avaibility-wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .avaibility-wrap-one {
+        display: block;
+        max-width: 440px;
+        position: relative;
+    }
+
+    .avaibility-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.625;
+        color: #d7e0e1;
+    }
+
+    .avaibility-line {
+        width: 2px;
+        height: 150px;
+        background: linear-gradient(180deg,
+                rgba(171, 174, 183, 0) 0%,
+                #abaeb7 51.56%,
+                rgba(171, 174, 183, 0) 100%);
+        position: absolute;
+        top: -30%;
+        left: -3%;
+    }
+
+    .avaibility-wrap-two {
+        display: flex;
+        gap: 25px;
+        justify-content: space-around;
+    }
+
+    .avaibility-img {
+        display: block;
+        min-width: 120px;
+        object-fit: contain;
+        max-height: 400px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .avaibility-title {
+        font-size: 42px;
+    }
+}

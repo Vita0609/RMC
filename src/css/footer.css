@@ -1,0 +1,238 @@
+.footer-container {
+    background: #1a1d26;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footer-wrap_one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 90px;
+    column-gap: 15px;
+    margin-bottom: 50px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 350px;
+}
+
+.footer-wrapper p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #abaeb7;
+}
+
+.footer-icon {
+    fill: #fff;
+    transition: all 0.2s ease;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+    fill: #ffb077;
+}
+
+.footer-icon:active {
+    fill: #ce8c5d;
+}
+
+.footer-list_one {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-list_one a {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #abaeb7;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.footer-list_one li:nth-child(1) a {
+    color: #ffb077;
+}
+
+.footer-list_one a:hover,
+.footer-list_one a:focus {
+    color: #ffb077;
+}
+
+.footer-list_one a:active {
+    color: #ce8c5d;
+}
+
+.footer-list_two {
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+    max-width: 230px;
+}
+
+.footer-list_two li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-list_two h3 {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1;
+    color: #fff;
+}
+
+.footer-list_two p,
+.footer-list_two a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #abaeb7;
+    transition: all 0.4s ease;
+}
+
+.footer-list_two a:hover,
+.footer-list_two a:focus {
+    color: #ffb077;
+}
+
+.footer-list_two a:active {
+    color: #ce8c5d;
+}
+
+.footer-current {
+    width: 1px;
+    height: 244px;
+    background: linear-gradient(180deg,
+            rgba(171, 174, 183, 0) 0%,
+            #abaeb7 51.56%,
+            rgba(171, 174, 183, 0) 100%);
+}
+
+.footer-wrap_two {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+    gap: 5px;
+}
+
+.footer-wrap_two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #2e313a;
+}
+
+.footer-wrap_two p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.57143;
+    text-align: center;
+    color: #abaeb7;
+}
+
+.footer-wrap_two a {
+    font-size: 14px;
+    line-height: 1.57143;
+    text-align: center;
+    font-weight: 600;
+    color: #ffb077;
+}
+
+.btn-scroll_up {
+    position: fixed;
+    z-index: 999;
+    right: 3%;
+    bottom: 3%;
+    background-color: rgb(49 49 49);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+}
+
+.btn-scroll_up-active {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.btn-scroll_up svg {
+    fill: #abaeb7;
+    stroke: transparent;
+    transition: all 0.4s ease;
+}
+
+.btn-scroll_up:hover svg {
+    fill: #96989d;
+}
+
+.btn-scroll_up:active svg {
+    fill: #abaeb7;
+}
+
+.btn-scroll_up:hover {
+    background-color: rgb(60, 59, 59);
+}
+
+.btn-scroll_up:active {
+    background-color: rgb(77, 77, 77);
+}
+
+@media screen and (min-width: 1220px) {
+    .footer-container {
+        padding-top: 40px;
+    }
+
+    .footer-wrap_one {
+        margin-bottom: 70px;
+    }
+
+    .footer-list_two {
+        max-width: 275px;
+    }
+
+    .footer-list_two h3 {
+        font-size: 40px;
+    }
+
+    .footer-list_two p,
+    .footer-list_two a {
+        font-size: 18px;
+    }
+
+    .btn-scroll_up {
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn-scroll_up svg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer-container {
+        padding-top: 60px;
+    }
+}

@@ -1,0 +1,137 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.projects-wrap {}
+
+.projects-text {
+    font-family: 'Larken-Medium', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    color: #ffc978;
+}
+
+.projects-title {
+    font-family: 'Larken-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.projects-list {
+    display: flex;
+    gap: 20px;
+}
+
+.projects-list-item {
+    height: 30px;
+}
+
+.projects-item-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #abaeb7;
+    padding-bottom: 10px;
+}
+
+.projects-item-link:hover {
+    color: #ffc978;
+}
+
+.carent {
+    position: relative;
+    color: #ffc978;
+}
+
+.carent::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #ffc978;
+    border-radius: 2px;
+}
+
+.projects-list_img {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.projects-list_img img {
+    width: 100%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projects-list_img li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects-list_img li:nth-child(1),
+.projects-list_img li:nth-child(3) {
+    margin-bottom: 30px;
+}
+
+.projects-list_img li:nth-child(2),
+.projects-list_img li:nth-child(4) {
+    margin-top: 30px;
+}
+
+.projects-list_img li:nth-child(3),
+.projects-list_img li:nth-child(4) {
+    display: none;
+}
+
+@media screen and (max-width: 435px) {
+    .projects-list {
+        gap: 15px;
+    }
+
+    .projects-item-link {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 50px;
+        justify-content: space-between;
+    }
+
+    .projects-list {
+        align-items: flex-end;
+    }
+
+    .projects-list_img li:nth-child(3),
+    .projects-list_img li:nth-child(4) {
+        display: flex;
+    }
+
+    .projects-list_img img:hover {
+        transform: translateY(-15px);
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .projects-title {
+        font-size: 42px;
+    }
+}
